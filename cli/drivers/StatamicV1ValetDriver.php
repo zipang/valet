@@ -25,7 +25,7 @@ class StatamicV1ValetDriver extends ValetDriver
      */
     public function isStaticFile($sitePath, $siteName, $uri)
     {
-        if (strpos($uri, '/_add-ons') === 0 || strpos($uri, '/_app') === 0 || strpos($uri, '/_content') === 0 ||
+        if ( strpos($uri, '/_app') === 0 || strpos($uri, '/_content') === 0 ||
             strpos($uri, '/_cache') === 0 || strpos($uri, '/_config') === 0 || strpos($uri, '/_logs') === 0 ||
             $uri === '/admin'
         ) {
